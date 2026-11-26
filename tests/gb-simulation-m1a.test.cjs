@@ -1,0 +1,18 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const html=fs.readFileSync(process.argv[2]||'gamebras-base.html','utf8');
+const start=html.indexOf('// === GB Simulation M1A:'),end=html.indexOf('// === End GB Simulation M1A ===');
+assert(start>=0&&end>start);const {Session,validate}=vm.runInNewContext(html.slice(start,end)+'\nGBSimulation;');
+const s=new Session(), flags={};
+assert.equal(s.minute,0);
+const ev=(id,flag,afterMinutes,value)=>({type:'scheduleFlag',id,flag,afterMinutes,value});
+s.schedule(ev('late','x',10,false));s.schedule(ev('early','x',5,true));s.schedule(ev('same','y',5,true));
+assert.equal(s.schedule(ev('early','x',5,true)),false);
+s.advance(4,flags);assert.equal(flags.x,undefined);assert.equal(s.queue.length,3);
+s.advance(1,flags);assert.equal(flags.x,true);assert.equal(flags.y,true);assert.equal(s.minute,5);
+s.advance(10,flags);assert.equal(flags.x,undefined);assert.equal(s.minute,15);assert.equal(s.queue.length,0);
+assert.deepEqual(Array.from(s.history.filter(x=>x.kind==='evento'),x=>x.minute),[5,5,10]);
+assert.throws(()=>s.advance(-1,flags));assert.throws(()=>s.advance(1.5,flags));assert.throws(()=>validate(ev('bad','__proto__',1,true)));assert.throws(()=>validate(ev('bad','a',0,true)));
+const snap=s.snapshot();snap.history[0].detail='mutated';assert.notEqual(s.history[0].detail,'mutated');
+for(let i=0;i<2100;i++)s.record('test','a');assert.equal(s.history.length,2000);assert(s.discarded>0);
+s.reset();assert.equal(s.minute,0);assert.equal(s.queue.length,0);assert.equal(s.seen.size,0);assert.equal(s.history.length,0);
+console.log('PASS: ordem, limites, relógio, deduplicação, snapshot e reset.');
