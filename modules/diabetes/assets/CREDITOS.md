@@ -7,3 +7,5 @@ A campanha deriva do Gamebras, tag v6.4.1, repositório livredopodervil/gamebras
 - `fisio-*.svg` · esquemas anatômicos vetoriais originais, com rótulos editáveis.
 
 Todos os personagens, prontuários e registros clínicos do módulo são fictícios.
+
+UBS visual: ilustrações procedurais originais, materiais e sprites de 256 px por quadro.

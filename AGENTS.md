@@ -54,3 +54,6 @@ Pais imediatos e URLs de commits; tag de distribuição permanente. Não incorpo
 ## Expansão PBL de diabetes sobre v6.4.1
 
 Branch experimental iniciada no commit 854a2d926315948dd8b0e746b87c72a64914567d. As decisões clínicas, variáveis, pacientes, tutoria e aula são dados do módulo. O painel de atendimento aceita o mesmo contrato declarativo para outros módulos e a interface anterior serve campanhas sem o painel. Os ramos de urgência simulam reconhecimento, suporte inicial e destino. O tratamento hospitalar, a validação clínica humana e a avaliação de eficácia pedagógica ainda exigem trabalho próprio. Regenerar e verificar a distribuição com `python tools/build-diabetes.py --output-dir ../gamebras-diabetes-build` e `python tools/build-diabetes.py --check`. Execute os testes antes da integração.
+
+## UBS visual experimental
+Base 82299540e8617ef0380c4a339fe08c9a5965bb3c. Preservar clinicalModule integralmente. Rebuild: python tools/build-ubs-visual.py. Sprites sentados estáticos; validar circulação e aparência no navegador antes de publicar. Não confundir ilustração procedural com arte final.

@@ -15,146 +15,14 @@
       "alphaTest": 0.5
     },
     "hero_agente": {
-      "imageUrl": "./diabetes_hero_sprite.png",
+      "imageUrl": "./assets/ubs-hero_agente.png",
       "cols": 4,
-      "rows": 4,
-      "frameOffsets": {
-        "0": [
-          0,
-          0
-        ],
-        "1": [
-          6,
-          0
-        ],
-        "2": [
-          10,
-          0
-        ],
-        "3": [
-          16,
-          0
-        ],
-        "4": [
-          0,
-          0
-        ],
-        "5": [
-          4,
-          0
-        ],
-        "6": [
-          11,
-          0
-        ],
-        "7": [
-          13,
-          0
-        ],
-        "8": [
-          0,
-          0
-        ],
-        "9": [
-          7,
-          0
-        ],
-        "10": [
-          10,
-          0
-        ],
-        "11": [
-          17,
-          0
-        ],
-        "12": [
-          0,
-          0
-        ],
-        "13": [
-          6,
-          0
-        ],
-        "14": [
-          10,
-          0
-        ],
-        "15": [
-          16,
-          0
-        ]
-      }
+      "rows": 4
     },
     "npc_enfermeira": {
-      "imageUrl": "./diabetes_nurse_sprite.png",
+      "imageUrl": "./assets/ubs-npc_enfermeira.png",
       "cols": 4,
-      "rows": 4,
-      "frameOffsets": {
-        "0": [
-          0,
-          0
-        ],
-        "1": [
-          0,
-          0
-        ],
-        "2": [
-          0,
-          0
-        ],
-        "3": [
-          0,
-          0
-        ],
-        "4": [
-          0,
-          0
-        ],
-        "5": [
-          1,
-          0
-        ],
-        "6": [
-          0,
-          0
-        ],
-        "7": [
-          0,
-          0
-        ],
-        "8": [
-          0,
-          0
-        ],
-        "9": [
-          0,
-          0
-        ],
-        "10": [
-          0,
-          0
-        ],
-        "11": [
-          0,
-          0
-        ],
-        "12": [
-          0,
-          0
-        ],
-        "13": [
-          0,
-          0
-        ],
-        "14": [
-          0,
-          0
-        ],
-        "15": [
-          0,
-          0
-        ]
-      }
+      "rows": 4
     },
     "npc_paciente": {
       "imageUrl": "./diabetes_patient_sprite.png",
@@ -347,10 +215,15 @@
       "imageUrl": "./assets/clinical-signs.png",
       "cols": 3,
       "rows": 1
+    },
+    "ubs_materials": {
+      "imageUrl": "./assets/ubs-materials.png",
+      "cols": 4,
+      "rows": 3
     }
   },
   "tileset": {
-    "asset": "diabetes_atlas"
+    "asset": "ubs_materials"
   },
   "heroSprite": {
     "asset": "hero_agente"
@@ -371,213 +244,19 @@
       1,
       1,
       1,
-      1
-    ],
-    [
-      1,
-      0,
-      0,
-      0,
-      0,
-      0,
       1,
       1,
       1,
       1,
-      2,
-      2,
-      2,
-      1,
-      1
-    ],
-    [
-      1,
-      0,
-      0,
-      0,
-      0,
-      0,
-      1,
-      1,
-      1,
-      1,
-      2,
-      2,
-      2,
-      1,
-      1
-    ],
-    [
-      1,
-      0,
-      0,
-      0,
-      0,
-      0,
-      1,
-      1,
-      1,
-      1,
-      2,
-      2,
-      2,
-      1,
-      1
-    ],
-    [
-      1,
-      0,
-      0,
-      0,
-      0,
-      0,
-      1,
-      1,
-      1,
-      1,
-      2,
-      2,
-      2,
-      1,
-      1
-    ],
-    [
-      1,
-      0,
-      0,
-      0,
-      0,
-      0,
-      4,
-      4,
-      1,
-      1,
-      2,
-      2,
-      2,
       1,
       1
     ],
     [
       1,
       1,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
       1,
       1,
-      2,
-      2,
-      2,
       1,
-      1
-    ],
-    [
-      1,
-      1,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      2,
-      2,
-      2,
-      1,
-      1
-    ],
-    [
-      1,
-      1,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      2,
-      2,
-      2,
-      1,
-      1
-    ],
-    [
-      1,
-      1,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      1,
-      1,
-      2,
-      2,
-      2,
-      1,
-      1
-    ],
-    [
-      1,
-      1,
-      5,
-      5,
-      5,
-      5,
-      1,
-      1,
-      4,
-      4,
-      4,
-      4,
-      2,
-      1,
-      1
-    ],
-    [
-      1,
-      1,
-      5,
-      5,
-      5,
-      5,
-      1,
-      1,
-      4,
-      4,
-      4,
-      4,
-      2,
-      1,
-      1
-    ],
-    [
-      1,
-      1,
-      5,
-      5,
-      5,
-      5,
-      1,
-      1,
-      4,
-      4,
-      4,
-      4,
-      2,
-      1,
-      1
-    ],
-    [
       1,
       1,
       1,
@@ -609,7 +288,298 @@
       1,
       1,
       1,
+      1,
+      1,
+      1,
+      1,
+      1,
       1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
     ]
   ],
   "heights": [
@@ -628,18 +598,6 @@
       0,
       0,
       0,
-      0
-    ],
-    [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
       0,
       0,
       0,
@@ -653,18 +611,6 @@
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    [
       0,
       0,
       0,
@@ -696,18 +642,6 @@
       0,
       0,
       0,
-      0
-    ],
-    [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
       0,
       0,
       0,
@@ -721,18 +655,6 @@
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    [
       0,
       0,
       0,
@@ -764,18 +686,6 @@
       0,
       0,
       0,
-      0
-    ],
-    [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
       0,
       0,
       0,
@@ -789,18 +699,6 @@
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    [
       0,
       0,
       0,
@@ -832,6 +730,33 @@
       0,
       0,
       0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
       0
     ],
     [
@@ -849,9 +774,151 @@
       0,
       0,
       0,
+      0,
+      0,
+      0,
+      0,
+      0,
       0
     ],
     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
       0,
       0,
       0,
@@ -870,184 +937,576 @@
     ]
   ],
   "spawn": {
-    "x": 3,
-    "z": 7
+    "x": 9,
+    "z": 14
   },
   "blocks": [
     {
-      "id": "ubs",
+      "id": "north",
       "pos": [
-        4.5,
-        1.2,
+        14.25,
+        0.625,
+        0.15000000000000002
+      ],
+      "size": [
+        28.5,
+        1.25,
+        0.24
+      ],
+      "asset": "ubs_materials",
+      "tile": 3,
+      "solid": true
+    },
+    {
+      "id": "west",
+      "pos": [
+        0.15000000000000002,
+        0.625,
+        11.25
+      ],
+      "size": [
+        0.24,
+        1.25,
+        22.5
+      ],
+      "asset": "ubs_materials",
+      "tile": 3,
+      "solid": true
+    },
+    {
+      "id": "east",
+      "pos": [
+        28.349999999999998,
+        0.625,
+        11.25
+      ],
+      "size": [
+        0.24,
+        1.25,
+        22.5
+      ],
+      "asset": "ubs_materials",
+      "tile": 3,
+      "solid": true
+    },
+    {
+      "id": "partition6",
+      "pos": [
+        9.0,
+        0.525,
         3.75
       ],
       "size": [
-        4.8,
-        2.4,
-        3.6
+        0.195,
+        1.05,
+        7.5
       ],
-      "asset": "diabetes_atlas",
-      "faces": {
-        "sides": 3,
-        "top": 0,
-        "bottom": 0
-      },
+      "asset": "ubs_materials",
+      "tile": 3,
       "solid": true
     },
     {
-      "id": "telhado_ubs_1",
+      "id": "partition12",
       "pos": [
+        18.0,
+        0.525,
+        3.75
+      ],
+      "size": [
+        0.195,
+        1.05,
+        7.5
+      ],
+      "asset": "ubs_materials",
+      "tile": 3,
+      "solid": true
+    },
+    {
+      "id": "hall1.5",
+      "pos": [
+        2.25,
+        0.425,
+        8.25
+      ],
+      "size": [
         4.5,
-        2.65,
-        2.95
+        0.85,
+        0.195
       ],
-      "size": [
-        5.2,
-        0.22,
-        2.1
-      ],
-      "rot": [
-        -18,
-        0,
-        0
-      ],
-      "asset": "diabetes_roof",
-      "tile": 0,
-      "solid": true,
-      "castShadow": false
+      "asset": "ubs_materials",
+      "tile": 3,
+      "solid": true
     },
     {
-      "id": "telhado_ubs_2",
-      "pos": [
-        4.5,
-        2.65,
-        4.55
-      ],
-      "size": [
-        5.2,
-        0.22,
-        2.1
-      ],
-      "rot": [
-        18,
-        0,
-        0
-      ],
-      "asset": "diabetes_roof",
-      "tile": 1,
-      "solid": true,
-      "castShadow": false
-    },
-    {
-      "id": "mesa_educacao",
-      "pos": [
-        14.25,
-        0.18,
-        16.5
-      ],
-      "size": [
-        2.4,
-        0.36,
-        1.5
-      ],
-      "asset": "diabetes_atlas",
-      "faces": {
-        "top": 4,
-        "sides": 0
-      },
-      "climbable": true
-    },
-    {
-      "id": "canteiro_1",
-      "pos": [
-        4.5,
-        0.18,
-        16.5
-      ],
-      "size": [
-        1.8,
-        0.36,
-        1.5
-      ],
-      "asset": "diabetes_atlas",
-      "faces": {
-        "top": 5,
-        "sides": 0
-      },
-      "climbable": true
-    },
-    {
-      "id": "canteiro_2",
+      "id": "hall5",
       "pos": [
         7.5,
-        0.18,
-        16.5
+        0.425,
+        8.25
       ],
       "size": [
-        1.8,
-        0.36,
-        1.5
+        3.0,
+        0.85,
+        0.195
       ],
-      "asset": "diabetes_atlas",
-      "faces": {
-        "top": 5,
-        "sides": 0
-      },
-      "climbable": true
+      "asset": "ubs_materials",
+      "tile": 3,
+      "solid": true
     },
     {
-      "id": "banco_plaza",
+      "id": "hall8",
       "pos": [
         12.0,
-        0.35,
+        0.425,
+        8.25
+      ],
+      "size": [
+        3.0,
+        0.85,
+        0.195
+      ],
+      "asset": "ubs_materials",
+      "tile": 3,
+      "solid": true
+    },
+    {
+      "id": "hall11",
+      "pos": [
+        16.5,
+        0.425,
+        8.25
+      ],
+      "size": [
+        3.0,
+        0.85,
+        0.195
+      ],
+      "asset": "ubs_materials",
+      "tile": 3,
+      "solid": true
+    },
+    {
+      "id": "hall14",
+      "pos": [
+        21.0,
+        0.425,
+        8.25
+      ],
+      "size": [
+        3.0,
+        0.85,
+        0.195
+      ],
+      "asset": "ubs_materials",
+      "tile": 3,
+      "solid": true
+    },
+    {
+      "id": "hall17.5",
+      "pos": [
+        26.25,
+        0.425,
+        8.25
+      ],
+      "size": [
+        4.5,
+        0.85,
+        0.195
+      ],
+      "asset": "ubs_materials",
+      "tile": 3,
+      "solid": true
+    },
+    {
+      "id": "reception",
+      "pos": [
+        4.5,
+        0.4,
+        18.0
+      ],
+      "size": [
+        6.0,
+        0.8,
+        0.9750000000000001
+      ],
+      "asset": "ubs_materials",
+      "tile": 4,
+      "solid": true
+    },
+    {
+      "id": "pharmacy",
+      "pos": [
+        4.5,
+        0.4,
         12.0
       ],
       "size": [
-        1.8,
-        0.7,
-        0.45
+        6.0,
+        0.8,
+        1.0499999999999998
       ],
-      "rot": [
-        0,
-        30,
-        0
-      ],
-      "asset": "diabetes_atlas",
-      "faces": [
-        0,
-        0,
-        4,
-        0,
-        0,
-        0
-      ],
+      "asset": "ubs_materials",
+      "tile": 4,
       "solid": true
     },
     {
-      "id": "plataforma_caminhada",
+      "id": "desk0",
       "pos": [
-        17.25,
-        0.18,
-        10.5
+        3.75,
+        0.39,
+        3.0
       ],
       "size": [
-        2.4,
-        0.3,
-        1.8
+        3.0,
+        0.78,
+        1.2000000000000002
       ],
-      "asset": "diabetes_atlas",
-      "faces": {
-        "top": 4,
-        "sides": 0
-      },
-      "climbable": true
+      "asset": "ubs_materials",
+      "tile": 7,
+      "solid": true
+    },
+    {
+      "id": "cabinet0",
+      "pos": [
+        3.75,
+        0.5,
+        1.0499999999999998
+      ],
+      "size": [
+        3.0,
+        1,
+        0.75
+      ],
+      "asset": "ubs_materials",
+      "tile": 5,
+      "solid": true
+    },
+    {
+      "id": "exam0",
+      "pos": [
+        6.0,
+        0.35,
+        5.550000000000001
+      ],
+      "size": [
+        0.9750000000000001,
+        0.7,
+        2.0999999999999996
+      ],
+      "asset": "ubs_materials",
+      "tile": 8,
+      "solid": true
+    },
+    {
+      "id": "desk1",
+      "pos": [
+        12.75,
+        0.39,
+        3.0
+      ],
+      "size": [
+        3.0,
+        0.78,
+        1.2000000000000002
+      ],
+      "asset": "ubs_materials",
+      "tile": 7,
+      "solid": true
+    },
+    {
+      "id": "cabinet1",
+      "pos": [
+        12.75,
+        0.5,
+        1.0499999999999998
+      ],
+      "size": [
+        3.0,
+        1,
+        0.75
+      ],
+      "asset": "ubs_materials",
+      "tile": 5,
+      "solid": true
+    },
+    {
+      "id": "exam1",
+      "pos": [
+        15.0,
+        0.35,
+        5.550000000000001
+      ],
+      "size": [
+        0.9750000000000001,
+        0.7,
+        2.0999999999999996
+      ],
+      "asset": "ubs_materials",
+      "tile": 8,
+      "solid": true
+    },
+    {
+      "id": "desk2",
+      "pos": [
+        22.5,
+        0.39,
+        3.0
+      ],
+      "size": [
+        3.0,
+        0.78,
+        1.2000000000000002
+      ],
+      "asset": "ubs_materials",
+      "tile": 7,
+      "solid": true
+    },
+    {
+      "id": "cabinet2",
+      "pos": [
+        22.5,
+        0.5,
+        1.0499999999999998
+      ],
+      "size": [
+        3.0,
+        1,
+        0.75
+      ],
+      "asset": "ubs_materials",
+      "tile": 5,
+      "solid": true
+    },
+    {
+      "id": "exam2",
+      "pos": [
+        24.75,
+        0.35,
+        5.550000000000001
+      ],
+      "size": [
+        0.9750000000000001,
+        0.7,
+        2.0999999999999996
+      ],
+      "asset": "ubs_materials",
+      "tile": 8,
+      "solid": true
+    },
+    {
+      "id": "chairback0",
+      "pos": [
+        16.5,
+        0.39,
+        12.93
+      ],
+      "size": [
+        0.9750000000000001,
+        0.78,
+        0.195
+      ],
+      "asset": "ubs_materials",
+      "tile": 6,
+      "solid": false
+    },
+    {
+      "id": "chairback1",
+      "pos": [
+        19.5,
+        0.39,
+        12.93
+      ],
+      "size": [
+        0.9750000000000001,
+        0.78,
+        0.195
+      ],
+      "asset": "ubs_materials",
+      "tile": 6,
+      "solid": false
+    },
+    {
+      "id": "chairback2",
+      "pos": [
+        22.5,
+        0.39,
+        12.93
+      ],
+      "size": [
+        0.9750000000000001,
+        0.78,
+        0.195
+      ],
+      "asset": "ubs_materials",
+      "tile": 6,
+      "solid": false
+    },
+    {
+      "id": "chairback3",
+      "pos": [
+        25.5,
+        0.39,
+        12.93
+      ],
+      "size": [
+        0.9750000000000001,
+        0.78,
+        0.195
+      ],
+      "asset": "ubs_materials",
+      "tile": 6,
+      "solid": false
+    },
+    {
+      "id": "chairback4",
+      "pos": [
+        16.5,
+        0.39,
+        17.43
+      ],
+      "size": [
+        0.9750000000000001,
+        0.78,
+        0.195
+      ],
+      "asset": "ubs_materials",
+      "tile": 6,
+      "solid": false
+    },
+    {
+      "id": "chairback5",
+      "pos": [
+        19.5,
+        0.39,
+        17.43
+      ],
+      "size": [
+        0.9750000000000001,
+        0.78,
+        0.195
+      ],
+      "asset": "ubs_materials",
+      "tile": 6,
+      "solid": false
+    },
+    {
+      "id": "chairback6",
+      "pos": [
+        22.5,
+        0.39,
+        17.43
+      ],
+      "size": [
+        0.9750000000000001,
+        0.78,
+        0.195
+      ],
+      "asset": "ubs_materials",
+      "tile": 6,
+      "solid": false
+    },
+    {
+      "id": "chairback7",
+      "pos": [
+        25.5,
+        0.39,
+        17.43
+      ],
+      "size": [
+        0.9750000000000001,
+        0.78,
+        0.195
+      ],
+      "asset": "ubs_materials",
+      "tile": 6,
+      "solid": false
+    },
+    {
+      "id": "waiting_table0",
+      "pos": [
+        16.5,
+        0.21,
+        21.299999999999997
+      ],
+      "size": [
+        0.9750000000000001,
+        0.42,
+        0.75
+      ],
+      "asset": "ubs_materials",
+      "tile": 7,
+      "solid": true
+    },
+    {
+      "id": "waiting_table1",
+      "pos": [
+        21.0,
+        0.21,
+        21.299999999999997
+      ],
+      "size": [
+        0.9750000000000001,
+        0.42,
+        0.75
+      ],
+      "asset": "ubs_materials",
+      "tile": 7,
+      "solid": true
+    },
+    {
+      "id": "waiting_table2",
+      "pos": [
+        25.5,
+        0.21,
+        21.299999999999997
+      ],
+      "size": [
+        0.9750000000000001,
+        0.42,
+        0.75
+      ],
+      "asset": "ubs_materials",
+      "tile": 7,
+      "solid": true
+    },
+    {
+      "id": "water_station",
+      "pos": [
+        10.5,
+        0.475,
+        15.0
+      ],
+      "size": [
+        0.9750000000000001,
+        0.95,
+        0.9750000000000001
+      ],
+      "asset": "ubs_materials",
+      "tile": 8,
+      "solid": true
+    },
+    {
+      "id": "education",
+      "pos": [
+        4.5,
+        0.35,
+        21.0
+      ],
+      "size": [
+        3.0,
+        0.7,
+        1.0499999999999998
+      ],
+      "asset": "ubs_materials",
+      "tile": 7,
+      "solid": true
     }
   ],
   "npcs": [
     {
       "name": "Enfermeira Lúcia",
-      "gridX": 4,
-      "gridZ": 7,
+      "gridX": 8,
+      "gridZ": 8,
       "asset": "npc_enfermeira",
       "behavior": "idle",
       "canJump": true,
@@ -1073,7 +1532,7 @@
     {
       "name": "Dona Rosa",
       "gridX": 11,
-      "gridZ": 8,
+      "gridZ": 9,
       "asset": "npc_dm2",
       "behavior": "idle",
       "canJump": false,
@@ -1086,7 +1545,7 @@
     },
     {
       "name": "Paulo",
-      "gridX": 5,
+      "gridX": 13,
       "gridZ": 9,
       "asset": "npc_hypo",
       "behavior": "idle",
@@ -1100,8 +1559,8 @@
     },
     {
       "name": "Marina",
-      "gridX": 7,
-      "gridZ": 4,
+      "gridX": 15,
+      "gridZ": 9,
       "asset": "npc_dka",
       "behavior": "idle",
       "canJump": false,
@@ -1114,8 +1573,8 @@
     },
     {
       "name": "Joana",
-      "gridX": 6,
-      "gridZ": 11,
+      "gridX": 17,
+      "gridZ": 9,
       "asset": "npc_edka",
       "behavior": "idle",
       "canJump": false,
@@ -1128,8 +1587,8 @@
     },
     {
       "name": "Augusto",
-      "gridX": 8,
-      "gridZ": 4,
+      "gridX": 11,
+      "gridZ": 12,
       "asset": "npc_hhs",
       "behavior": "idle",
       "canJump": false,
@@ -1142,8 +1601,8 @@
     },
     {
       "name": "Celina",
-      "gridX": 10,
-      "gridZ": 10,
+      "gridX": 13,
+      "gridZ": 12,
       "asset": "npc_recurrent",
       "behavior": "idle",
       "canJump": false,
@@ -1156,8 +1615,8 @@
     },
     {
       "name": "Beatriz",
-      "gridX": 3,
-      "gridZ": 10,
+      "gridX": 15,
+      "gridZ": 12,
       "asset": "npc_gest",
       "behavior": "idle",
       "canJump": false,
@@ -1170,8 +1629,8 @@
     },
     {
       "name": "Davi",
-      "gridX": 11,
-      "gridZ": 4,
+      "gridX": 17,
+      "gridZ": 12,
       "asset": "npc_foot",
       "behavior": "idle",
       "canJump": false,
@@ -1208,7 +1667,7 @@
       "pos": [
         7.5,
         0,
-        7.5
+        10.5
       ],
       "grantsFlag": "coletou_insulina",
       "onPickupSound": "coin",
@@ -1224,9 +1683,9 @@
         "tile": 2
       },
       "pos": [
-        4.5,
+        7.5,
         0,
-        14.8
+        15.0
       ],
       "grantsFlag": "coletou_lanche",
       "onPickupSound": "coin",
@@ -1242,9 +1701,9 @@
         "tile": 3
       },
       "pos": [
-        18.0,
+        10.5,
         0,
-        6.0
+        16.5
       ],
       "grantsFlag": "coletou_agua",
       "onPickupSound": "coin",
@@ -1289,6 +1748,42 @@
       "water": false,
       "solid": false,
       "decorate": false
+    },
+    "6": {
+      "height": 0,
+      "water": false,
+      "solid": false,
+      "decorate": false
+    },
+    "7": {
+      "height": 0,
+      "water": false,
+      "solid": false,
+      "decorate": false
+    },
+    "8": {
+      "height": 0,
+      "water": false,
+      "solid": false,
+      "decorate": false
+    },
+    "9": {
+      "height": 0,
+      "water": false,
+      "solid": false,
+      "decorate": false
+    },
+    "10": {
+      "height": 0,
+      "water": false,
+      "solid": false,
+      "decorate": false
+    },
+    "11": {
+      "height": 0,
+      "water": false,
+      "solid": false,
+      "decorate": false
     }
   },
   "objects": [
@@ -1299,7 +1794,7 @@
       "pos": [
         10.5,
         0,
-        9.0
+        18.0
       ],
       "size": [
         0.75,
@@ -1334,9 +1829,9 @@
       "name": "Acolhimento",
       "asset": "clinical_signs",
       "pos": [
-        10.5,
-        0.05,
-        3.9
+        4.5,
+        0,
+        10.5
       ],
       "size": [
         1.5,
@@ -1358,9 +1853,9 @@
       "name": "Consultas",
       "asset": "clinical_signs",
       "pos": [
-        16.4,
-        0.0,
-        10.2
+        13.5,
+        0,
+        9.0
       ],
       "size": [
         1.5,
@@ -1382,9 +1877,9 @@
       "name": "Procedimentos",
       "asset": "clinical_signs",
       "pos": [
-        7.5,
-        0.0,
-        12.6
+        22.5,
+        0,
+        6.0
       ],
       "size": [
         1.5,
