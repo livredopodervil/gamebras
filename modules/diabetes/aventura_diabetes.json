@@ -1,0 +1,2981 @@
+{
+  "name": "UBS — Plantão de diabetes",
+  "introText": "Plantão clínico: procure Lúcia para receber o glicosímetro. Atenda Rosa, Paulo e Marina. Cada decisão consome tempo e altera a evolução dos pacientes.",
+  "tileSize": 1.5,
+  "assets": {
+    "diabetes_atlas": {
+      "imageUrl": "./diabetes_tileset.png",
+      "cols": 3,
+      "rows": 2
+    },
+    "diabetes_roof": {
+      "imageUrl": "./diabetes_roof_tiles.png",
+      "cols": 2,
+      "rows": 1,
+      "alphaTest": 0.5
+    },
+    "hero_agente": {
+      "imageUrl": "./diabetes_hero_sprite.png",
+      "cols": 4,
+      "rows": 4,
+      "frameOffsets": {
+        "0": [
+          0,
+          0
+        ],
+        "1": [
+          6,
+          0
+        ],
+        "2": [
+          10,
+          0
+        ],
+        "3": [
+          16,
+          0
+        ],
+        "4": [
+          0,
+          0
+        ],
+        "5": [
+          4,
+          0
+        ],
+        "6": [
+          11,
+          0
+        ],
+        "7": [
+          13,
+          0
+        ],
+        "8": [
+          0,
+          0
+        ],
+        "9": [
+          7,
+          0
+        ],
+        "10": [
+          10,
+          0
+        ],
+        "11": [
+          17,
+          0
+        ],
+        "12": [
+          0,
+          0
+        ],
+        "13": [
+          6,
+          0
+        ],
+        "14": [
+          10,
+          0
+        ],
+        "15": [
+          16,
+          0
+        ]
+      }
+    },
+    "npc_enfermeira": {
+      "imageUrl": "./diabetes_nurse_sprite.png",
+      "cols": 4,
+      "rows": 4,
+      "frameOffsets": {
+        "0": [
+          0,
+          0
+        ],
+        "1": [
+          0,
+          0
+        ],
+        "2": [
+          0,
+          0
+        ],
+        "3": [
+          0,
+          0
+        ],
+        "4": [
+          0,
+          0
+        ],
+        "5": [
+          1,
+          0
+        ],
+        "6": [
+          0,
+          0
+        ],
+        "7": [
+          0,
+          0
+        ],
+        "8": [
+          0,
+          0
+        ],
+        "9": [
+          0,
+          0
+        ],
+        "10": [
+          0,
+          0
+        ],
+        "11": [
+          0,
+          0
+        ],
+        "12": [
+          0,
+          0
+        ],
+        "13": [
+          0,
+          0
+        ],
+        "14": [
+          0,
+          0
+        ],
+        "15": [
+          0,
+          0
+        ]
+      }
+    },
+    "npc_paciente": {
+      "imageUrl": "./diabetes_patient_sprite.png",
+      "cols": 4,
+      "rows": 4,
+      "frameOffsets": {
+        "0": [
+          0,
+          0
+        ],
+        "1": [
+          5,
+          0
+        ],
+        "2": [
+          8,
+          0
+        ],
+        "3": [
+          14,
+          0
+        ],
+        "4": [
+          0,
+          0
+        ],
+        "5": [
+          5,
+          0
+        ],
+        "6": [
+          9,
+          0
+        ],
+        "7": [
+          12,
+          0
+        ],
+        "8": [
+          0,
+          0
+        ],
+        "9": [
+          4,
+          0
+        ],
+        "10": [
+          9,
+          0
+        ],
+        "11": [
+          13,
+          0
+        ],
+        "12": [
+          0,
+          0
+        ],
+        "13": [
+          4,
+          0
+        ],
+        "14": [
+          8,
+          0
+        ],
+        "15": [
+          12,
+          0
+        ]
+      }
+    },
+    "itens_diabetes": {
+      "imageUrl": "./diabetes_items.png",
+      "cols": 2,
+      "rows": 2
+    },
+    "npc_paulo": {
+      "imageUrl": "./diabetes_paulo_sprite.png",
+      "cols": 4,
+      "rows": 4,
+      "frameOffsets": {
+        "0": [
+          0,
+          0
+        ],
+        "1": [
+          6,
+          0
+        ],
+        "2": [
+          10,
+          0
+        ],
+        "3": [
+          16,
+          0
+        ],
+        "4": [
+          0,
+          0
+        ],
+        "5": [
+          4,
+          0
+        ],
+        "6": [
+          11,
+          0
+        ],
+        "7": [
+          13,
+          0
+        ],
+        "8": [
+          0,
+          0
+        ],
+        "9": [
+          7,
+          0
+        ],
+        "10": [
+          10,
+          0
+        ],
+        "11": [
+          17,
+          0
+        ],
+        "12": [
+          0,
+          0
+        ],
+        "13": [
+          6,
+          0
+        ],
+        "14": [
+          10,
+          0
+        ],
+        "15": [
+          16,
+          0
+        ]
+      }
+    }
+  },
+  "tileset": {
+    "asset": "diabetes_atlas"
+  },
+  "heroSprite": {
+    "asset": "hero_agente"
+  },
+  "tiles": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      4,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      5,
+      5,
+      5,
+      5,
+      1,
+      1,
+      4,
+      4,
+      4,
+      4,
+      2,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      5,
+      5,
+      5,
+      5,
+      1,
+      1,
+      4,
+      4,
+      4,
+      4,
+      2,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      5,
+      5,
+      5,
+      5,
+      1,
+      1,
+      4,
+      4,
+      4,
+      4,
+      2,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "heights": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "spawn": {
+    "x": 3,
+    "z": 7
+  },
+  "blocks": [
+    {
+      "id": "ubs",
+      "pos": [
+        4.5,
+        1.2,
+        3.75
+      ],
+      "size": [
+        4.8,
+        2.4,
+        3.6
+      ],
+      "asset": "diabetes_atlas",
+      "faces": {
+        "sides": 3,
+        "top": 0,
+        "bottom": 0
+      },
+      "solid": true
+    },
+    {
+      "id": "telhado_ubs_1",
+      "pos": [
+        4.5,
+        2.65,
+        2.95
+      ],
+      "size": [
+        5.2,
+        0.22,
+        2.1
+      ],
+      "rot": [
+        -18,
+        0,
+        0
+      ],
+      "asset": "diabetes_roof",
+      "tile": 0,
+      "solid": true,
+      "castShadow": false
+    },
+    {
+      "id": "telhado_ubs_2",
+      "pos": [
+        4.5,
+        2.65,
+        4.55
+      ],
+      "size": [
+        5.2,
+        0.22,
+        2.1
+      ],
+      "rot": [
+        18,
+        0,
+        0
+      ],
+      "asset": "diabetes_roof",
+      "tile": 1,
+      "solid": true,
+      "castShadow": false
+    },
+    {
+      "id": "mesa_educacao",
+      "pos": [
+        14.25,
+        0.18,
+        16.5
+      ],
+      "size": [
+        2.4,
+        0.36,
+        1.5
+      ],
+      "asset": "diabetes_atlas",
+      "faces": {
+        "top": 4,
+        "sides": 0
+      },
+      "climbable": true
+    },
+    {
+      "id": "canteiro_1",
+      "pos": [
+        4.5,
+        0.18,
+        16.5
+      ],
+      "size": [
+        1.8,
+        0.36,
+        1.5
+      ],
+      "asset": "diabetes_atlas",
+      "faces": {
+        "top": 5,
+        "sides": 0
+      },
+      "climbable": true
+    },
+    {
+      "id": "canteiro_2",
+      "pos": [
+        7.5,
+        0.18,
+        16.5
+      ],
+      "size": [
+        1.8,
+        0.36,
+        1.5
+      ],
+      "asset": "diabetes_atlas",
+      "faces": {
+        "top": 5,
+        "sides": 0
+      },
+      "climbable": true
+    },
+    {
+      "id": "banco_plaza",
+      "pos": [
+        12.0,
+        0.35,
+        12.0
+      ],
+      "size": [
+        1.8,
+        0.7,
+        0.45
+      ],
+      "rot": [
+        0,
+        30,
+        0
+      ],
+      "asset": "diabetes_atlas",
+      "faces": [
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      "solid": true
+    },
+    {
+      "id": "plataforma_caminhada",
+      "pos": [
+        17.25,
+        0.18,
+        10.5
+      ],
+      "size": [
+        2.4,
+        0.3,
+        1.8
+      ],
+      "asset": "diabetes_atlas",
+      "faces": {
+        "top": 4,
+        "sides": 0
+      },
+      "climbable": true
+    }
+  ],
+  "npcs": [
+    {
+      "name": "Enfermeira Lúcia",
+      "gridX": 4,
+      "gridZ": 7,
+      "asset": "npc_enfermeira",
+      "behavior": "idle",
+      "canJump": true,
+      "dialogueTree": {
+        "start": {
+          "text": "Três pacientes aguardam atendimento. Rosa está na praça, Paulo perto da horta e Marina perto da UBS. Leve o glicosímetro. Os demais recursos estão no cenário.",
+          "options": [
+            {
+              "label": "Receber glicosímetro",
+              "giveItem": "glicosimetro",
+              "setFlag": "mutirao_iniciado",
+              "next": null,
+              "hideIfFlag": "mutirao_iniciado"
+            },
+            {
+              "label": "Voltar ao plantão",
+              "next": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Dona Rosa",
+      "gridX": 11,
+      "gridZ": 8,
+      "asset": "npc_paciente",
+      "behavior": "idle",
+      "canJump": false,
+      "dialogueTree": {
+        "start": {
+          "text": "Abrir prontuário",
+          "options": []
+        }
+      }
+    },
+    {
+      "name": "Paulo",
+      "gridX": 5,
+      "gridZ": 9,
+      "asset": "npc_paulo",
+      "behavior": "idle",
+      "canJump": false,
+      "dialogueTree": {
+        "start": {
+          "text": "Abrir prontuário",
+          "options": []
+        }
+      }
+    },
+    {
+      "name": "Marina",
+      "gridX": 7,
+      "gridZ": 4,
+      "asset": "npc_paciente",
+      "behavior": "idle",
+      "canJump": false,
+      "dialogueTree": {
+        "start": {
+          "text": "Abrir prontuário",
+          "options": []
+        }
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "glicosimetro",
+      "name": "Glicosímetro",
+      "icon": "🩸",
+      "sprite": {
+        "asset": "itens_diabetes",
+        "tile": 0
+      },
+      "grantsFlag": "tem_glicosimetro",
+      "onPickupSound": "coin",
+      "description": "Modelo educativo. Uma medida isolada não confirma diabetes. A interpretação depende do contexto e dos exames.",
+      "hint": "Recurso para atendimento clínico; mantenha na mochila."
+    },
+    {
+      "id": "caneta_insulina",
+      "name": "Caneta de insulina",
+      "icon": "💉",
+      "sprite": {
+        "asset": "itens_diabetes",
+        "tile": 1
+      },
+      "pos": [
+        7.5,
+        0,
+        7.5
+      ],
+      "grantsFlag": "coletou_insulina",
+      "onPickupSound": "coin",
+      "description": "Modelo demonstrativo, não destinado a aplicação. Insulina é indispensável no diabetes tipo 1 e pode ser indicada no tipo 2; seguir prescrição.",
+      "hint": "Recurso para atendimento clínico; mantenha na mochila."
+    },
+    {
+      "id": "lanche_saudavel",
+      "name": "Carboidrato de ação rápida",
+      "icon": "🍎",
+      "sprite": {
+        "asset": "itens_diabetes",
+        "tile": 2
+      },
+      "pos": [
+        4.5,
+        0,
+        14.8
+      ],
+      "grantsFlag": "coletou_lanche",
+      "onPickupSound": "coin",
+      "description": "Recurso simulado para hipoglicemia em paciente consciente e capaz de deglutir.",
+      "hint": "Recurso para atendimento clínico; mantenha na mochila."
+    },
+    {
+      "id": "garrafa_agua",
+      "name": "Garrafa de água",
+      "icon": "💧",
+      "sprite": {
+        "asset": "itens_diabetes",
+        "tile": 3
+      },
+      "pos": [
+        18.0,
+        0,
+        6.0
+      ],
+      "grantsFlag": "coletou_agua",
+      "onPickupSound": "coin",
+      "description": "Água é a bebida habitual preferida; não substitui avaliação e tratamento da hiperglicemia.",
+      "hint": "Recurso para atendimento clínico; mantenha na mochila."
+    }
+  ],
+  "events": [],
+  "tileProperties": {
+    "0": {
+      "height": 0,
+      "water": false,
+      "solid": false,
+      "decorate": false
+    },
+    "1": {
+      "height": 0,
+      "water": false,
+      "solid": false,
+      "decorate": false
+    },
+    "2": {
+      "height": 0,
+      "water": false,
+      "solid": false,
+      "decorate": false
+    },
+    "3": {
+      "height": 0,
+      "water": false,
+      "solid": false,
+      "decorate": false
+    },
+    "4": {
+      "height": 0,
+      "water": false,
+      "solid": false,
+      "decorate": false
+    },
+    "5": {
+      "height": 0,
+      "water": false,
+      "solid": false,
+      "decorate": false
+    }
+  },
+  "objects": [
+    {
+      "id": "guia_animado",
+      "name": "Guia de hidratação",
+      "asset": "itens_diabetes",
+      "pos": [
+        10.5,
+        0,
+        9.0
+      ],
+      "size": [
+        0.75,
+        0.75
+      ],
+      "bob": 0.12,
+      "bobHz": 0.8,
+      "animation": "idle",
+      "animations": {
+        "idle": {
+          "row": 1,
+          "frames": [
+            1
+          ],
+          "fps": 4
+        },
+        "pulse": {
+          "row": 1,
+          "frames": [
+            0,
+            1
+          ],
+          "fps": 4
+        }
+      },
+      "scripts": [
+        "guia_hidratacao"
+      ]
+    }
+  ],
+  "scripts": [
+    {
+      "id": "guia_hidratacao",
+      "rules": [
+        {
+          "trigger": "interact",
+          "actions": [
+            {
+              "type": "message",
+              "title": "Hidratação",
+              "text": "Prefira água a bebidas açucaradas. A necessidade de líquidos varia de pessoa para pessoa."
+            },
+            {
+              "type": "animate",
+              "name": "pulse",
+              "duration": 1.5
+            },
+            {
+              "type": "sound",
+              "name": "chime"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "clinicalModule": {
+    "schema": "gamebras.clinical/1",
+    "id": "diabetes",
+    "name": "Diabetes — UBS",
+    "cases": [
+      {
+        "id": "dm2",
+        "name": "DM2 — hiperglicemia estável",
+        "story": "Poliúria e sede há semanas, sem vômitos. Adulto com diabetes tipo 2.",
+        "topic": "dm2",
+        "state": {
+          "g": 280,
+          "k": 0.2,
+          "ph": 7.4,
+          "bicarbonate": 24,
+          "water": 0,
+          "kind": "dm2",
+          "insulin": 0,
+          "absorption": 0,
+          "rate": 0.025,
+          "ketoneRate": 0,
+          "waterRate": 0
+        }
+      },
+      {
+        "id": "hypo",
+        "name": "Hipoglicemia sintomática",
+        "story": "Adulto consciente, sudorese e tremor após insulina e refeição omitida.",
+        "topic": "hipoglicemia",
+        "state": {
+          "g": 48,
+          "k": 0.1,
+          "ph": 7.4,
+          "bicarbonate": 24,
+          "water": 0,
+          "kind": "hypo",
+          "insulin": 0,
+          "absorption": 0,
+          "rate": -0.025,
+          "ketoneRate": 0,
+          "waterRate": 0
+        }
+      },
+      {
+        "id": "dka",
+        "name": "Suspeita de cetoacidose",
+        "story": "Adulto com DM1, vômitos, dor abdominal e respiração profunda após omitir insulina.",
+        "topic": "cetoacidose",
+        "state": {
+          "g": 390,
+          "k": 4.5,
+          "ph": 7.22,
+          "bicarbonate": 12,
+          "water": 2,
+          "kind": "dka",
+          "insulin": 0,
+          "absorption": 0,
+          "rate": 0.45,
+          "ketoneRate": 0.002,
+          "waterRate": 0.002
+        }
+      }
+    ],
+    "patients": {
+      "Dona Rosa": "dm2",
+      "Paulo": "hypo",
+      "Marina": "dka"
+    },
+    "actions": {
+      "measure": {
+        "label": "Medir glicemia",
+        "minutes": 5,
+        "item": "glicosimetro",
+        "topic": "glicemia",
+        "rules": [
+          {
+            "when": true,
+            "message": "Glicemia registrada; reavalie após intervenções.",
+            "points": 0,
+            "classification": "neutral",
+            "observe": {
+              "g": {
+                "value": [
+                  "round",
+                  [
+                    "get",
+                    "g"
+                  ]
+                ],
+                "at": [
+                  "get",
+                  "elapsed"
+                ]
+              }
+            }
+          }
+        ],
+        "flow": {
+          "start": "check0",
+          "nodes": [
+            {
+              "id": "check0",
+              "type": "condition",
+              "field": "match0",
+              "op": "eq",
+              "value": true,
+              "yes": "pick0",
+              "no": "end"
+            },
+            {
+              "id": "pick0",
+              "type": "action",
+              "action": "choose0",
+              "next": "end"
+            },
+            {
+              "id": "end",
+              "type": "end"
+            }
+          ]
+        }
+      },
+      "ketones": {
+        "label": "Medir cetonas",
+        "minutes": 10,
+        "item": null,
+        "topic": "cetoacidose",
+        "rules": [
+          {
+            "when": true,
+            "message": "Cetonemia registrada.",
+            "points": 0,
+            "classification": "neutral",
+            "observe": {
+              "k": {
+                "value": [
+                  "get",
+                  "k"
+                ],
+                "at": [
+                  "get",
+                  "elapsed"
+                ]
+              }
+            }
+          }
+        ],
+        "flow": {
+          "start": "check0",
+          "nodes": [
+            {
+              "id": "check0",
+              "type": "condition",
+              "field": "match0",
+              "op": "eq",
+              "value": true,
+              "yes": "pick0",
+              "no": "end"
+            },
+            {
+              "id": "pick0",
+              "type": "action",
+              "action": "choose0",
+              "next": "end"
+            },
+            {
+              "id": "end",
+              "type": "end"
+            }
+          ]
+        }
+      },
+      "gas": {
+        "label": "Gasometria venosa (simulada)",
+        "minutes": 10,
+        "item": null,
+        "topic": "cetoacidose",
+        "rules": [
+          {
+            "when": true,
+            "message": "Gasometria venosa registrada.",
+            "points": 0,
+            "classification": "neutral",
+            "observe": {
+              "gas": {
+                "ph": [
+                  "get",
+                  "ph"
+                ],
+                "bicarbonate": [
+                  "get",
+                  "bicarbonate"
+                ],
+                "at": [
+                  "get",
+                  "elapsed"
+                ]
+              }
+            }
+          }
+        ],
+        "flow": {
+          "start": "check0",
+          "nodes": [
+            {
+              "id": "check0",
+              "type": "condition",
+              "field": "match0",
+              "op": "eq",
+              "value": true,
+              "yes": "pick0",
+              "no": "end"
+            },
+            {
+              "id": "pick0",
+              "type": "action",
+              "action": "choose0",
+              "next": "end"
+            },
+            {
+              "id": "end",
+              "type": "end"
+            }
+          ]
+        }
+      },
+      "history": {
+        "label": "Anamnese e exame",
+        "minutes": 10,
+        "item": null,
+        "topic": null,
+        "rules": [
+          {
+            "when": true,
+            "message": [
+              "get",
+              "story"
+            ],
+            "points": 0,
+            "classification": "neutral",
+            "observe": {
+              "history": {
+                "text": [
+                  "get",
+                  "story"
+                ],
+                "at": [
+                  "get",
+                  "elapsed"
+                ]
+              }
+            }
+          }
+        ],
+        "flow": {
+          "start": "check0",
+          "nodes": [
+            {
+              "id": "check0",
+              "type": "condition",
+              "field": "match0",
+              "op": "eq",
+              "value": true,
+              "yes": "pick0",
+              "no": "end"
+            },
+            {
+              "id": "pick0",
+              "type": "action",
+              "action": "choose0",
+              "next": "end"
+            },
+            {
+              "id": "end",
+              "type": "end"
+            }
+          ]
+        }
+      },
+      "carbs": {
+        "label": "Carboidrato oral (consciente)",
+        "minutes": 15,
+        "item": "lanche_saudavel",
+        "topic": "hipoglicemia",
+        "rules": [
+          {
+            "when": [
+              "eq",
+              [
+                "get",
+                "kind"
+              ],
+              "dka"
+            ],
+            "message": "Via oral inadequada neste cenário.",
+            "points": -2,
+            "classification": "error"
+          },
+          {
+            "when": [
+              "and",
+              [
+                "lt",
+                [
+                  "get",
+                  "g"
+                ],
+                70
+              ],
+              [
+                "and",
+                [
+                  "ne",
+                  [
+                    "get",
+                    "observed.g"
+                  ],
+                  null
+                ],
+                [
+                  "lt",
+                  [
+                    "get",
+                    "observed.g.value"
+                  ],
+                  70
+                ],
+                [
+                  "lte",
+                  [
+                    "sub",
+                    [
+                      "get",
+                      "elapsed"
+                    ],
+                    [
+                      "get",
+                      "observed.g.at"
+                    ]
+                  ],
+                  20
+                ]
+              ]
+            ],
+            "message": "Carboidrato administrado; reavalie em 15 minutos.",
+            "points": 2,
+            "classification": "appropriate",
+            "set": {
+              "absorption": [
+                "add",
+                [
+                  "get",
+                  "absorption"
+                ],
+                65
+              ]
+            }
+          },
+          {
+            "when": [
+              "lt",
+              [
+                "get",
+                "g"
+              ],
+              70
+            ],
+            "message": "Tratamento empírico aceito; registre glicemia assim que possível e reavalie em 15 minutos.",
+            "points": 1,
+            "classification": "appropriate",
+            "set": {
+              "absorption": [
+                "add",
+                [
+                  "get",
+                  "absorption"
+                ],
+                65
+              ]
+            }
+          },
+          {
+            "when": [
+              "and",
+              [
+                "eq",
+                [
+                  "get",
+                  "kind"
+                ],
+                "hypo"
+              ],
+              [
+                "gte",
+                [
+                  "get",
+                  "absorption"
+                ],
+                1
+              ]
+            ],
+            "message": "Confirme recuperação antes de repetir carboidrato.",
+            "points": 0,
+            "classification": "neutral"
+          },
+          {
+            "when": true,
+            "message": "Carboidrato sem indicação atual.",
+            "points": -2,
+            "classification": "error"
+          }
+        ],
+        "flow": {
+          "start": "check0",
+          "nodes": [
+            {
+              "id": "check0",
+              "type": "condition",
+              "field": "match0",
+              "op": "eq",
+              "value": true,
+              "yes": "pick0",
+              "no": "check1"
+            },
+            {
+              "id": "pick0",
+              "type": "action",
+              "action": "choose0",
+              "next": "end"
+            },
+            {
+              "id": "check1",
+              "type": "condition",
+              "field": "match1",
+              "op": "eq",
+              "value": true,
+              "yes": "pick1",
+              "no": "check2"
+            },
+            {
+              "id": "pick1",
+              "type": "action",
+              "action": "choose1",
+              "next": "end"
+            },
+            {
+              "id": "check2",
+              "type": "condition",
+              "field": "match2",
+              "op": "eq",
+              "value": true,
+              "yes": "pick2",
+              "no": "check3"
+            },
+            {
+              "id": "pick2",
+              "type": "action",
+              "action": "choose2",
+              "next": "end"
+            },
+            {
+              "id": "check3",
+              "type": "condition",
+              "field": "match3",
+              "op": "eq",
+              "value": true,
+              "yes": "pick3",
+              "no": "check4"
+            },
+            {
+              "id": "pick3",
+              "type": "action",
+              "action": "choose3",
+              "next": "end"
+            },
+            {
+              "id": "check4",
+              "type": "condition",
+              "field": "match4",
+              "op": "eq",
+              "value": true,
+              "yes": "pick4",
+              "no": "end"
+            },
+            {
+              "id": "pick4",
+              "type": "action",
+              "action": "choose4",
+              "next": "end"
+            },
+            {
+              "id": "end",
+              "type": "end"
+            }
+          ]
+        }
+      },
+      "water": {
+        "label": "Hidratação oral (se tolerada)",
+        "minutes": 15,
+        "item": "garrafa_agua",
+        "topic": null,
+        "rules": [
+          {
+            "when": [
+              "eq",
+              [
+                "get",
+                "kind"
+              ],
+              "dka"
+            ],
+            "message": "Hidratação oral não substitui atendimento de urgência.",
+            "points": -1,
+            "classification": "error"
+          },
+          {
+            "when": true,
+            "message": "Hidratação oral registrada.",
+            "points": 0,
+            "classification": "neutral",
+            "set": {
+              "water": [
+                "max",
+                0,
+                [
+                  "sub",
+                  [
+                    "get",
+                    "water"
+                  ],
+                  0.3
+                ]
+              ]
+            }
+          }
+        ],
+        "flow": {
+          "start": "check0",
+          "nodes": [
+            {
+              "id": "check0",
+              "type": "condition",
+              "field": "match0",
+              "op": "eq",
+              "value": true,
+              "yes": "pick0",
+              "no": "check1"
+            },
+            {
+              "id": "pick0",
+              "type": "action",
+              "action": "choose0",
+              "next": "end"
+            },
+            {
+              "id": "check1",
+              "type": "condition",
+              "field": "match1",
+              "op": "eq",
+              "value": true,
+              "yes": "pick1",
+              "no": "end"
+            },
+            {
+              "id": "pick1",
+              "type": "action",
+              "action": "choose1",
+              "next": "end"
+            },
+            {
+              "id": "end",
+              "type": "end"
+            }
+          ]
+        }
+      },
+      "insulin": {
+        "label": "Insulina sem avaliação adicional (decisão simulada)",
+        "minutes": 30,
+        "item": "caneta_insulina",
+        "topic": "insulina",
+        "rules": [
+          {
+            "when": true,
+            "message": "Intervenção sem avaliação de segurança: risco de hipoglicemia; na CAD é necessário protocolo monitorado.",
+            "points": -3,
+            "classification": "error",
+            "set": {
+              "insulin": [
+                "add",
+                [
+                  "get",
+                  "insulin"
+                ],
+                30
+              ]
+            }
+          }
+        ],
+        "flow": {
+          "start": "check0",
+          "nodes": [
+            {
+              "id": "check0",
+              "type": "condition",
+              "field": "match0",
+              "op": "eq",
+              "value": true,
+              "yes": "pick0",
+              "no": "end"
+            },
+            {
+              "id": "pick0",
+              "type": "action",
+              "action": "choose0",
+              "next": "end"
+            },
+            {
+              "id": "end",
+              "type": "end"
+            }
+          ]
+        }
+      },
+      "refer": {
+        "label": "Encaminhar para urgência",
+        "minutes": 10,
+        "item": null,
+        "topic": null,
+        "rules": [
+          {
+            "when": [
+              "eq",
+              [
+                "get",
+                "kind"
+              ],
+              "dka"
+            ],
+            "message": "Transferência registrada. Não atrasar atendimento na suspeita de CAD.",
+            "points": 5,
+            "classification": "appropriate",
+            "outcome": "appropriate"
+          },
+          {
+            "when": [
+              "lt",
+              [
+                "get",
+                "g"
+              ],
+              54
+            ],
+            "message": "Transferência registrada por gravidade.",
+            "points": 3,
+            "classification": "appropriate",
+            "outcome": "appropriate"
+          },
+          {
+            "when": true,
+            "message": "Transferência registrada; revise necessidade conforme gravidade e resposta.",
+            "points": 0,
+            "classification": "neutral",
+            "outcome": "referred"
+          }
+        ],
+        "flow": {
+          "start": "check0",
+          "nodes": [
+            {
+              "id": "check0",
+              "type": "condition",
+              "field": "match0",
+              "op": "eq",
+              "value": true,
+              "yes": "pick0",
+              "no": "check1"
+            },
+            {
+              "id": "pick0",
+              "type": "action",
+              "action": "choose0",
+              "next": "end"
+            },
+            {
+              "id": "check1",
+              "type": "condition",
+              "field": "match1",
+              "op": "eq",
+              "value": true,
+              "yes": "pick1",
+              "no": "check2"
+            },
+            {
+              "id": "pick1",
+              "type": "action",
+              "action": "choose1",
+              "next": "end"
+            },
+            {
+              "id": "check2",
+              "type": "condition",
+              "field": "match2",
+              "op": "eq",
+              "value": true,
+              "yes": "pick2",
+              "no": "end"
+            },
+            {
+              "id": "pick2",
+              "type": "action",
+              "action": "choose2",
+              "next": "end"
+            },
+            {
+              "id": "end",
+              "type": "end"
+            }
+          ]
+        }
+      },
+      "plan": {
+        "label": "Plano ambulatorial e seguimento",
+        "minutes": 15,
+        "item": null,
+        "topic": null,
+        "rules": [
+          {
+            "when": [
+              "or",
+              [
+                "and",
+                [
+                  "eq",
+                  [
+                    "get",
+                    "kind"
+                  ],
+                  "dm2"
+                ],
+                [
+                  "ne",
+                  [
+                    "get",
+                    "observed.g"
+                  ],
+                  null
+                ],
+                [
+                  "ne",
+                  [
+                    "get",
+                    "observed.history"
+                  ],
+                  null
+                ]
+              ],
+              [
+                "and",
+                [
+                  "eq",
+                  [
+                    "get",
+                    "kind"
+                  ],
+                  "hypo"
+                ],
+                [
+                  "gte",
+                  [
+                    "get",
+                    "g"
+                  ],
+                  70
+                ],
+                [
+                  "gte",
+                  [
+                    "get",
+                    "observed.g.value"
+                  ],
+                  70
+                ],
+                [
+                  "lte",
+                  [
+                    "sub",
+                    [
+                      "get",
+                      "elapsed"
+                    ],
+                    [
+                      "get",
+                      "observed.g.at"
+                    ]
+                  ],
+                  20
+                ]
+              ]
+            ],
+            "message": "Plano compatível com o cenário; orientar retorno e seguimento.",
+            "points": 5,
+            "classification": "appropriate",
+            "outcome": "appropriate"
+          },
+          {
+            "when": true,
+            "message": "Alta insegura ou avaliação incompleta.",
+            "points": -5,
+            "classification": "error",
+            "outcome": "unsafe"
+          }
+        ],
+        "flow": {
+          "start": "check0",
+          "nodes": [
+            {
+              "id": "check0",
+              "type": "condition",
+              "field": "match0",
+              "op": "eq",
+              "value": true,
+              "yes": "pick0",
+              "no": "check1"
+            },
+            {
+              "id": "pick0",
+              "type": "action",
+              "action": "choose0",
+              "next": "end"
+            },
+            {
+              "id": "check1",
+              "type": "condition",
+              "field": "match1",
+              "op": "eq",
+              "value": true,
+              "yes": "pick1",
+              "no": "end"
+            },
+            {
+              "id": "pick1",
+              "type": "action",
+              "action": "choose1",
+              "next": "end"
+            },
+            {
+              "id": "end",
+              "type": "end"
+            }
+          ]
+        }
+      },
+      "wait": {
+        "label": "Aguardar 30 minutos",
+        "minutes": 30,
+        "item": null,
+        "topic": null,
+        "rules": [
+          {
+            "when": [
+              "or",
+              [
+                "eq",
+                [
+                  "get",
+                  "kind"
+                ],
+                "dka"
+              ],
+              [
+                "lt",
+                [
+                  "get",
+                  "g"
+                ],
+                70
+              ]
+            ],
+            "message": "Atraso em condição que exige intervenção.",
+            "points": -2,
+            "classification": "error"
+          },
+          {
+            "when": true,
+            "message": "O tempo passou; a condição pode evoluir.",
+            "points": 0,
+            "classification": "neutral"
+          }
+        ],
+        "flow": {
+          "start": "check0",
+          "nodes": [
+            {
+              "id": "check0",
+              "type": "condition",
+              "field": "match0",
+              "op": "eq",
+              "value": true,
+              "yes": "pick0",
+              "no": "check1"
+            },
+            {
+              "id": "pick0",
+              "type": "action",
+              "action": "choose0",
+              "next": "end"
+            },
+            {
+              "id": "check1",
+              "type": "condition",
+              "field": "match1",
+              "op": "eq",
+              "value": true,
+              "yes": "pick1",
+              "no": "end"
+            },
+            {
+              "id": "pick1",
+              "type": "action",
+              "action": "choose1",
+              "next": "end"
+            },
+            {
+              "id": "end",
+              "type": "end"
+            }
+          ]
+        }
+      }
+    },
+    "evolution": {
+      "g": [
+        "max",
+        20,
+        [
+          "min",
+          800,
+          [
+            "sub",
+            [
+              "add",
+              [
+                "add",
+                [
+                  "get",
+                  "g"
+                ],
+                [
+                  "get",
+                  "rate"
+                ]
+              ],
+              [
+                "mul",
+                [
+                  "get",
+                  "absorption"
+                ],
+                0.04
+              ]
+            ],
+            [
+              "mul",
+              [
+                "get",
+                "insulin"
+              ],
+              0.035
+            ]
+          ]
+        ]
+      ],
+      "absorption": [
+        "mul",
+        [
+          "get",
+          "absorption"
+        ],
+        0.96
+      ],
+      "insulin": [
+        "mul",
+        [
+          "get",
+          "insulin"
+        ],
+        0.995
+      ],
+      "k": [
+        "min",
+        9,
+        [
+          "add",
+          [
+            "get",
+            "k"
+          ],
+          [
+            "get",
+            "ketoneRate"
+          ]
+        ]
+      ],
+      "water": [
+        "min",
+        5,
+        [
+          "add",
+          [
+            "get",
+            "water"
+          ],
+          [
+            "get",
+            "waterRate"
+          ]
+        ]
+      ]
+    },
+    "behavior": {
+      "rules": [
+        {
+          "when": [
+            "get",
+            "finished"
+          ],
+          "value": {
+            "level": "stable",
+            "frequency": 0,
+            "amplitude": 0,
+            "bob": 0,
+            "marker": "V"
+          }
+        },
+        {
+          "when": [
+            "eq",
+            [
+              "get",
+              "kind"
+            ],
+            "dka"
+          ],
+          "value": {
+            "level": "urgent",
+            "frequency": 2,
+            "amplitude": 0.025,
+            "bob": 0.025,
+            "marker": "R"
+          }
+        },
+        {
+          "when": [
+            "lt",
+            [
+              "get",
+              "g"
+            ],
+            54
+          ],
+          "value": {
+            "level": "urgent",
+            "frequency": 17,
+            "amplitude": 0.045,
+            "bob": 0.025,
+            "marker": "R"
+          }
+        },
+        {
+          "when": [
+            "lt",
+            [
+              "get",
+              "g"
+            ],
+            70
+          ],
+          "value": {
+            "level": "attention",
+            "frequency": 9,
+            "amplitude": 0.02,
+            "bob": 0,
+            "marker": "A"
+          }
+        },
+        {
+          "when": true,
+          "value": {
+            "level": "stable",
+            "frequency": 0,
+            "amplitude": 0,
+            "bob": 0,
+            "marker": "V"
+          }
+        }
+      ],
+      "flow": {
+        "start": "check0",
+        "nodes": [
+          {
+            "id": "check0",
+            "type": "condition",
+            "field": "match0",
+            "op": "eq",
+            "value": true,
+            "yes": "pick0",
+            "no": "check1"
+          },
+          {
+            "id": "pick0",
+            "type": "action",
+            "action": "choose0",
+            "next": "end"
+          },
+          {
+            "id": "check1",
+            "type": "condition",
+            "field": "match1",
+            "op": "eq",
+            "value": true,
+            "yes": "pick1",
+            "no": "check2"
+          },
+          {
+            "id": "pick1",
+            "type": "action",
+            "action": "choose1",
+            "next": "end"
+          },
+          {
+            "id": "check2",
+            "type": "condition",
+            "field": "match2",
+            "op": "eq",
+            "value": true,
+            "yes": "pick2",
+            "no": "check3"
+          },
+          {
+            "id": "pick2",
+            "type": "action",
+            "action": "choose2",
+            "next": "end"
+          },
+          {
+            "id": "check3",
+            "type": "condition",
+            "field": "match3",
+            "op": "eq",
+            "value": true,
+            "yes": "pick3",
+            "no": "check4"
+          },
+          {
+            "id": "pick3",
+            "type": "action",
+            "action": "choose3",
+            "next": "end"
+          },
+          {
+            "id": "check4",
+            "type": "condition",
+            "field": "match4",
+            "op": "eq",
+            "value": true,
+            "yes": "pick4",
+            "no": "end"
+          },
+          {
+            "id": "pick4",
+            "type": "action",
+            "action": "choose4",
+            "next": "end"
+          },
+          {
+            "id": "end",
+            "type": "end"
+          }
+        ]
+      }
+    },
+    "triage": {
+      "rules": [
+        {
+          "when": [
+            "not",
+            [
+              "and",
+              [
+                "ne",
+                [
+                  "get",
+                  "observed.history"
+                ],
+                null
+              ],
+              [
+                "ne",
+                [
+                  "get",
+                  "observed.g"
+                ],
+                null
+              ]
+            ]
+          ],
+          "value": "?"
+        },
+        {
+          "when": [
+            "or",
+            [
+              "eq",
+              [
+                "get",
+                "kind"
+              ],
+              "dka"
+            ],
+            [
+              "lt",
+              [
+                "get",
+                "observed.g.value"
+              ],
+              54
+            ]
+          ],
+          "value": "R"
+        },
+        {
+          "when": [
+            "lt",
+            [
+              "get",
+              "observed.g.value"
+            ],
+            70
+          ],
+          "value": "A"
+        },
+        {
+          "when": true,
+          "value": "V"
+        }
+      ],
+      "flow": {
+        "start": "check0",
+        "nodes": [
+          {
+            "id": "check0",
+            "type": "condition",
+            "field": "match0",
+            "op": "eq",
+            "value": true,
+            "yes": "pick0",
+            "no": "check1"
+          },
+          {
+            "id": "pick0",
+            "type": "action",
+            "action": "choose0",
+            "next": "end"
+          },
+          {
+            "id": "check1",
+            "type": "condition",
+            "field": "match1",
+            "op": "eq",
+            "value": true,
+            "yes": "pick1",
+            "no": "check2"
+          },
+          {
+            "id": "pick1",
+            "type": "action",
+            "action": "choose1",
+            "next": "end"
+          },
+          {
+            "id": "check2",
+            "type": "condition",
+            "field": "match2",
+            "op": "eq",
+            "value": true,
+            "yes": "pick2",
+            "no": "check3"
+          },
+          {
+            "id": "pick2",
+            "type": "action",
+            "action": "choose2",
+            "next": "end"
+          },
+          {
+            "id": "check3",
+            "type": "condition",
+            "field": "match3",
+            "op": "eq",
+            "value": true,
+            "yes": "pick3",
+            "no": "end"
+          },
+          {
+            "id": "pick3",
+            "type": "action",
+            "action": "choose3",
+            "next": "end"
+          },
+          {
+            "id": "end",
+            "type": "end"
+          }
+        ]
+      }
+    },
+    "guidance": {
+      "rules": [
+        {
+          "when": [
+            "eq",
+            [
+              "get",
+              "outcome"
+            ],
+            "unsafe"
+          ],
+          "value": "O encerramento foi inseguro. Revise a avaliação e o destino."
+        },
+        {
+          "when": [
+            "get",
+            "finished"
+          ],
+          "value": "Revise a justificativa do encaminhamento ou seguimento."
+        },
+        {
+          "when": [
+            "eq",
+            [
+              "get",
+              "kind"
+            ],
+            "dka"
+          ],
+          "value": "Priorize avaliação urgente e transferência. A acidose e a cetose exigem tratamento monitorado."
+        },
+        {
+          "when": [
+            "lt",
+            [
+              "get",
+              "g"
+            ],
+            70
+          ],
+          "value": "A glicose continua baixa. Avalie consciência e capacidade de deglutir; reavalie após tratamento."
+        },
+        {
+          "when": [
+            "eq",
+            [
+              "get",
+              "kind"
+            ],
+            "hypo"
+          ],
+          "value": "Confirme a recuperação com nova medida e avalie risco de recorrência."
+        },
+        {
+          "when": true,
+          "value": "Reavalie sintomas, medidas e plano de seguimento."
+        }
+      ],
+      "flow": {
+        "start": "check0",
+        "nodes": [
+          {
+            "id": "check0",
+            "type": "condition",
+            "field": "match0",
+            "op": "eq",
+            "value": true,
+            "yes": "pick0",
+            "no": "check1"
+          },
+          {
+            "id": "pick0",
+            "type": "action",
+            "action": "choose0",
+            "next": "end"
+          },
+          {
+            "id": "check1",
+            "type": "condition",
+            "field": "match1",
+            "op": "eq",
+            "value": true,
+            "yes": "pick1",
+            "no": "check2"
+          },
+          {
+            "id": "pick1",
+            "type": "action",
+            "action": "choose1",
+            "next": "end"
+          },
+          {
+            "id": "check2",
+            "type": "condition",
+            "field": "match2",
+            "op": "eq",
+            "value": true,
+            "yes": "pick2",
+            "no": "check3"
+          },
+          {
+            "id": "pick2",
+            "type": "action",
+            "action": "choose2",
+            "next": "end"
+          },
+          {
+            "id": "check3",
+            "type": "condition",
+            "field": "match3",
+            "op": "eq",
+            "value": true,
+            "yes": "pick3",
+            "no": "check4"
+          },
+          {
+            "id": "pick3",
+            "type": "action",
+            "action": "choose3",
+            "next": "end"
+          },
+          {
+            "id": "check4",
+            "type": "condition",
+            "field": "match4",
+            "op": "eq",
+            "value": true,
+            "yes": "pick4",
+            "no": "check5"
+          },
+          {
+            "id": "pick4",
+            "type": "action",
+            "action": "choose4",
+            "next": "end"
+          },
+          {
+            "id": "check5",
+            "type": "condition",
+            "field": "match5",
+            "op": "eq",
+            "value": true,
+            "yes": "pick5",
+            "no": "end"
+          },
+          {
+            "id": "pick5",
+            "type": "action",
+            "action": "choose5",
+            "next": "end"
+          },
+          {
+            "id": "end",
+            "type": "end"
+          }
+        ]
+      }
+    },
+    "exam": {
+      "rules": [
+        {
+          "when": [
+            "eq",
+            [
+              "get",
+              "kind"
+            ],
+            "dka"
+          ],
+          "value": "Desidratação, respiração profunda e prostração."
+        },
+        {
+          "when": [
+            "and",
+            [
+              "eq",
+              [
+                "get",
+                "kind"
+              ],
+              "hypo"
+            ],
+            [
+              "lt",
+              [
+                "get",
+                "g"
+              ],
+              70
+            ]
+          ],
+          "value": "Sudorese e tremor; avaliar consciência."
+        },
+        {
+          "when": [
+            "eq",
+            [
+              "get",
+              "kind"
+            ],
+            "hypo"
+          ],
+          "value": "Tremor e sudorese em regressão; confirmar glicemia."
+        },
+        {
+          "when": true,
+          "value": "Sem sinais simulados de crise aguda."
+        }
+      ],
+      "flow": {
+        "start": "check0",
+        "nodes": [
+          {
+            "id": "check0",
+            "type": "condition",
+            "field": "match0",
+            "op": "eq",
+            "value": true,
+            "yes": "pick0",
+            "no": "check1"
+          },
+          {
+            "id": "pick0",
+            "type": "action",
+            "action": "choose0",
+            "next": "end"
+          },
+          {
+            "id": "check1",
+            "type": "condition",
+            "field": "match1",
+            "op": "eq",
+            "value": true,
+            "yes": "pick1",
+            "no": "check2"
+          },
+          {
+            "id": "pick1",
+            "type": "action",
+            "action": "choose1",
+            "next": "end"
+          },
+          {
+            "id": "check2",
+            "type": "condition",
+            "field": "match2",
+            "op": "eq",
+            "value": true,
+            "yes": "pick2",
+            "no": "check3"
+          },
+          {
+            "id": "pick2",
+            "type": "action",
+            "action": "choose2",
+            "next": "end"
+          },
+          {
+            "id": "check3",
+            "type": "condition",
+            "field": "match3",
+            "op": "eq",
+            "value": true,
+            "yes": "pick3",
+            "no": "end"
+          },
+          {
+            "id": "pick3",
+            "type": "action",
+            "action": "choose3",
+            "next": "end"
+          },
+          {
+            "id": "end",
+            "type": "end"
+          }
+        ]
+      }
+    },
+    "observations": [
+      {
+        "id": "g",
+        "label": "Glicemia",
+        "fields": [
+          {
+            "key": "value",
+            "unit": "mg/dL"
+          }
+        ]
+      },
+      {
+        "id": "k",
+        "label": "Cetonas",
+        "fields": [
+          {
+            "key": "value",
+            "unit": "mmol/L"
+          }
+        ]
+      },
+      {
+        "id": "gas",
+        "label": "Gasometria",
+        "fields": [
+          {
+            "key": "ph",
+            "unit": ""
+          },
+          {
+            "key": "bicarbonate",
+            "unit": "mmol/L"
+          }
+        ]
+      }
+    ],
+    "glossary": {
+      "Poliúria": "Aumento do volume urinário.",
+      "Hipoglicemia": "Glicose abaixo de 70 mg/dL; avaliar sintomas e gravidade.",
+      "Cetonemia": "Concentração de corpos cetônicos no sangue.",
+      "Cetoacidose": "Emergência metabólica com cetose e acidose.",
+      "Insulinopenia": "Disponibilidade insuficiente de insulina.",
+      "Desidratação": "Déficit de água corporal.",
+      "Sudorese": "Produção de suor; pode acompanhar hipoglicemia.",
+      "Polidipsia": "Sede excessiva.",
+      "Tremor": "Movimento involuntário oscilatório.",
+      "Acidose": "Processo que reduz o pH sanguíneo.",
+      "Gasometria": "Exame que avalia o equilíbrio ácido-base.",
+      "Bicarbonato": "Componente do sistema tampão do sangue.",
+      "Kussmaul": "Respiração profunda associada à acidose metabólica.",
+      "Glicemia": "Concentração de glicose no sangue."
+    },
+    "glossaryURL": "https://diretriz.diabetes.org.br/",
+    "profiles": {
+      "Paulo": {
+        "icon": "👨",
+        "pitch": 0.78,
+        "rate": 0.94,
+        "index": 0,
+        "voicePattern": "antonio|daniel|felipe|male|masculin"
+      },
+      "Marina": {
+        "icon": "👩",
+        "pitch": 1.12,
+        "rate": 0.91,
+        "index": 1,
+        "voicePattern": "francisca|maria|female|feminin|luciana"
+      },
+      "Dona Rosa": {
+        "icon": "👵",
+        "pitch": 0.94,
+        "rate": 0.83,
+        "index": 2,
+        "voicePattern": "francisca|maria|female|feminin|luciana"
+      },
+      "Enfermeira Lúcia": {
+        "icon": "👩‍⚕️",
+        "pitch": 1.22,
+        "rate": 1.04,
+        "index": 3,
+        "voicePattern": "francisca|maria|female|feminin|luciana"
+      }
+    },
+    "facilitator": {
+      "name": "Enfermeira Lúcia",
+      "requiresItem": "glicosimetro",
+      "urgentSuffix": "Avalie consciência e sinais vitais."
+    },
+    "completionFlag": "aventura_concluida",
+    "references": {
+      "glicemia": "https://diretriz.diabetes.org.br/tratamento-do-dm2-no-sistema-unico-de-saude-sus/",
+      "hipoglicemia": "https://diretriz.diabetes.org.br/tratamento-do-dm2-no-sistema-unico-de-saude-sus/",
+      "dm2": "https://diretriz.diabetes.org.br/tratamento-do-dm2-no-sistema-unico-de-saude-sus/",
+      "insulina": "https://diretriz.diabetes.org.br/tratamento-do-dm2-no-sistema-unico-de-saude-sus/",
+      "cetoacidose": "https://diretriz.diabetes.org.br/diagnostico-e-tratamento-da-cetoacidose-diabetica/"
+    },
+    "docs": {
+      "docs/clinica/glicemia.md": "# Avaliação glicêmica\n\n**Resumo educacional — SBD, edição 2026. Consulta: 27/11/2026.**\n\nA glicemia capilar orienta decisões imediatas e ajustes da insulinoterapia. Registre horário, sintomas, relação com alimentação e medicamentos. Resultados discordantes do quadro exigem confirmação. Não use uma medida capilar isolada para estabelecer diagnóstico definitivo de diabetes. Em pacientes sintomáticos, avalie consciência, sinais vitais e hidratação. A suspeita de crise metabólica exige avaliação adicional, não somente nova glicemia.\n\n[Capítulo oficial da SBD](https://diretriz.diabetes.org.br/tratamento-do-dm2-no-sistema-unico-de-saude-sus/)\n\nMaterial de apoio à simulação; não substitui avaliação clínica nem protocolo institucional.\n",
+      "docs/clinica/hipoglicemia.md": "# Hipoglicemia\n\n**Resumo educacional — SBD, edição 2026. Consulta: 27/11/2026.**\n\nNível 1: 54–69 mg/dL. Nível 2: abaixo de 54 mg/dL. Nível 3: comprometimento funcional que exige ajuda de terceiros, independentemente do valor. Se consciente e capaz de deglutir, administrar carboidrato de absorção rápida (habitualmente 15 g) e medir novamente após 15 minutos; repetir se persistir abaixo de 70 mg/dL. Se deglutição insegura, não oferecer via oral; solicitar assistência imediata e utilizar glicose IV ou glucagon conforme disponibilidade e protocolo. Avaliar causa e risco de recorrência antes da alta.\n\n[Capítulo oficial da SBD](https://diretriz.diabetes.org.br/tratamento-do-dm2-no-sistema-unico-de-saude-sus/)\n\nMaterial de apoio à simulação; não substitui avaliação clínica nem protocolo institucional.\n",
+      "docs/clinica/cetoacidose.md": "# Cetoacidose diabética\n\n**Resumo educacional — SBD, edição 2026. Consulta: 27/11/2026.**\n\nSuspeitar diante de vômitos, dor abdominal, desidratação, respiração profunda ou alteração da consciência. A diretriz SBD utiliza hiperglicemia acima de 200 mg/dL, acidose (pH venoso abaixo de 7,3 e/ou bicarbonato abaixo de 15 mEq/L) e cetonemia elevada (corte de 3 mmol/L); há apresentações euglicêmicas. Priorizar cetonemia e gasometria. Encaminhar urgentemente para unidade capaz de monitorar eletrólitos e oferecer tratamento intravenoso. Reposição de volume e insulina devem seguir protocolo, com avaliação do potássio antes da insulina. Não considerar hidratação oral ou normalização isolada da glicemia como resolução.\n\n[Capítulo oficial da SBD](https://diretriz.diabetes.org.br/diagnostico-e-tratamento-da-cetoacidose-diabetica/)\n\n[Cetoacidose euglicêmica](https://diretriz.diabetes.org.br/diagnostico-e-tratamento-da-cetoacidose-diabetica-euglicemica-cad-e/)\n\nMaterial de apoio à simulação; não substitui avaliação clínica nem protocolo institucional.\n",
+      "docs/clinica/dm2.md": "# Diabetes tipo 2 na APS\n\n**Resumo educacional — SBD, edição 2026. Consulta: 27/11/2026.**\n\nAvaliar sintomas, controle glicêmico, função renal, comorbidades, risco cardiovascular e acesso ao tratamento. Individualizar metas e terapêutica; orientar alimentação, atividade física e adesão. Programar retorno, HbA1c e rastreamento de complicações conforme situação clínica. Sintomas de insulinopenia ou descompensação exigem avaliação específica antes de decidir tratamento ambulatorial. Não dar alta de uma emergência metabólica com apenas orientações de estilo de vida.\n\n[Capítulo oficial da SBD](https://diretriz.diabetes.org.br/tratamento-do-dm2-no-sistema-unico-de-saude-sus/)\n\nMaterial de apoio à simulação; não substitui avaliação clínica nem protocolo institucional.\n",
+      "docs/clinica/insulina.md": "# Segurança da insulinoterapia\n\n**Resumo educacional — SBD, edição 2026. Consulta: 27/11/2026.**\n\nA insulina pode ser necessária no DM2 com controle inadequado ou sinais de insulinopenia. Individualizar esquema, dose, técnica, monitorização e educação sobre hipoglicemia. Não aplicar dose empírica sem conhecer o contexto clínico. Na cetoacidose, a insulinoterapia integra protocolo hospitalar com controle de potássio, fluidos e monitorização; não é uma injeção isolada. Rever tratamento após hipoglicemia e considerar função renal e ingestão alimentar.\n\n[Capítulo oficial da SBD](https://diretriz.diabetes.org.br/tratamento-do-dm2-no-sistema-unico-de-saude-sus/)\n\n[Protocolo de cetoacidose](https://diretriz.diabetes.org.br/diagnostico-e-tratamento-da-cetoacidose-diabetica/)\n\nMaterial de apoio à simulação; não substitui avaliação clínica nem protocolo institucional.\n"
+    },
+    "sample": {
+      "start": "avaliar",
+      "nodes": [
+        {
+          "id": "avaliar",
+          "type": "action",
+          "action": "measure",
+          "next": "decidir"
+        },
+        {
+          "id": "decidir",
+          "type": "condition",
+          "field": "g",
+          "op": "lt",
+          "value": 70,
+          "yes": "tratar",
+          "no": "investigar"
+        },
+        {
+          "id": "tratar",
+          "type": "action",
+          "action": "carbs",
+          "next": "fim"
+        },
+        {
+          "id": "investigar",
+          "type": "action",
+          "action": "history",
+          "next": "fim"
+        },
+        {
+          "id": "fim",
+          "type": "end"
+        }
+      ]
+    }
+  }
+}

@@ -38,3 +38,12 @@ M6: carregar engine sem diabetes; carregar segundo módulo sem alterar núcleo; 
 
 ## 7. Ambiente e publicação
 Repositório informado: git@github.com:livredopodervil/gamebras.git. Worktree experimental informado: ~/gamebras-med-experiment; estável: ~/gamebras-med-dev. Teste local: `~/abrir-gamebras.sh` (porta 8801; verificar identidade do servidor). Gates: `git diff --check` e `node --test tests/*.test.cjs`. Página pública: https://rogerioduarte.org/gamebras/. Publicar somente checkpoint aprovado, preservando metadados, imagem social e outros arquivos do site. Confirmar deploy efetivo. Não assumir que a versão pública é a última experimental.
+
+## Identidade e continuidade portátil (M6)
+Cada distribuição deve incorporar manifesto gamebras.lineage/1, SHA-256 do HTML sem o manifesto, hashes dos arquivos de desenvolvimento e identificador SHA-256 do manifesto canônico sem version_id. Pais são IDs completos; merges registram todos os pais. Branch e Git HEAD são metadados, não identidade. O HEAD registrado é a base de trabalho, não o commit futuro do próprio HTML. Preserve snapshots ancestrais para reconstruir o DAG. Não inclua segredos. Execute o verificador antes de distribuir. M6.1: selagem e verificação; M6.2: interface de exportação; M6.3–M6.7: executor, migração diabetes, editor, segundo módulo e continuidade independente. Não declare essas etapas concluídas antes dos testes.
+
+## M6.2–M6.3 (incremento experimental)
+Contexto portátil: manifesto e arquivos exportáveis pela interface. Executor declarativo genérico isolado: condições, efeitos e limite de transições. Ainda não conectado aos fluxos clínicos; M6.4 pendente. Downloads Android: localizar pelo SHA-256, não pelo nome.
+
+## M6.4 — contrato clínico declarativo
+A engine lê `clinicalModule` da fase (schema `gamebras.clinical/1`); regras, fluxos de seleção, evolução, triagem, observações, feedback, facilitador e referências ficam no módulo. Não incluir condições específicas de doenças no JavaScript genérico. A pasta `modules/diabetes/` contém a campanha isolada; o HTML distribuído incorpora sua configuração no JSON do bundle. A edição do fluxograma nesta versão é uma prévia de sessão, não altera automaticamente regras clínicas. M6.5: edição executável persistente; M6.6: segundo cenário completo e validação visual.
