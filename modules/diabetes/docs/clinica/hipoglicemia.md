@@ -1,9 +1,10 @@
-# Hipoglicemia
+# Hipoglicemia em pessoas com diabetes
 
-**Resumo educacional — SBD, edição 2026. Consulta: 27/11/2026.**
+Glicose abaixo de 70 mg/dL exige ação. Nível 2 corresponde a glicose abaixo de 54 mg/dL. Nível 3 é um evento com alteração mental ou física que exige a assistência de outra pessoa, independentemente de um valor documentado.
 
-Nível 1: 54–69 mg/dL. Nível 2: abaixo de 54 mg/dL. Nível 3: comprometimento funcional que exige ajuda de terceiros, independentemente do valor. Se consciente e capaz de deglutir, administrar carboidrato de absorção rápida (habitualmente 15 g) e medir novamente após 15 minutos; repetir se persistir abaixo de 70 mg/dL. Se deglutição insegura, não oferecer via oral; solicitar assistência imediata e utilizar glicose IV ou glucagon conforme disponibilidade e protocolo. Avaliar causa e risco de recorrência antes da alta.
+Em adulto consciente com deglutição segura, use glicose ou carboidrato de ação rápida, em geral 15 g, e reavalie glicemia e sintomas após 15 minutos. Repita o tratamento se a glicose permanecer baixa. Considere as condições de acesso à alimentação e o risco de nova queda.
 
-[Capítulo oficial da SBD](https://diretriz.diabetes.org.br/tratamento-do-dm2-no-sistema-unico-de-saude-sus/)
+Quando a via oral for insegura, acione ajuda e use glicose intravenosa ou glucagon conforme acesso, protocolo e disponibilidade. Após o resgate, investigue a causa e vigie recorrência. Sulfonilureia, disfunção renal, episódios repetidos e falta de apoio tornam inadequada a alta imediata após uma única melhora.
 
-Material de apoio à simulação; não substitui avaliação clínica nem protocolo institucional.
+- [ADA 2026 · Metas glicêmicas, hipoglicemia e crises](https://doi.org/10.2337/dc26-s006)
+- [ADA 2026 · Cuidados hospitalares](https://doi.org/10.2337/dc26-s016)
