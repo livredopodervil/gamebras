@@ -50,3 +50,7 @@ A engine lê `clinicalModule` da fase (schema `gamebras.clinical/1`); regras, fl
 
 ## M6.4.1 — distribuição enxuta
 Pais imediatos e URLs de commits; tag de distribuição permanente. Não incorporar arquivos binários novamente no contexto quando disponíveis no bundle. Preservar fonte de terceiros no repositório e avisos de licença. Verificar ambos os HTMLs antes de publicar.
+
+## Expansão PBL de diabetes sobre v6.4.1
+
+Branch experimental iniciada no commit 854a2d926315948dd8b0e746b87c72a64914567d. As decisões clínicas, variáveis, pacientes, tutoria e aula são dados do módulo. O painel de atendimento aceita o mesmo contrato declarativo para outros módulos e a interface anterior serve campanhas sem o painel. Os ramos de urgência simulam reconhecimento, suporte inicial e destino. O tratamento hospitalar, a validação clínica humana e a avaliação de eficácia pedagógica ainda exigem trabalho próprio. Regenerar e verificar a distribuição com `python tools/build-diabetes.py --output-dir ../gamebras-diabetes-build` e `python tools/build-diabetes.py --check`. Execute os testes antes da integração.
