@@ -47,3 +47,6 @@ Contexto portátil: manifesto e arquivos exportáveis pela interface. Executor d
 
 ## M6.4 — contrato clínico declarativo
 A engine lê `clinicalModule` da fase (schema `gamebras.clinical/1`); regras, fluxos de seleção, evolução, triagem, observações, feedback, facilitador e referências ficam no módulo. Não incluir condições específicas de doenças no JavaScript genérico. A pasta `modules/diabetes/` contém a campanha isolada; o HTML distribuído incorpora sua configuração no JSON do bundle. A edição do fluxograma nesta versão é uma prévia de sessão, não altera automaticamente regras clínicas. M6.5: edição executável persistente; M6.6: segundo cenário completo e validação visual.
+
+## M6.4.1 — distribuição enxuta
+Pais imediatos e URLs de commits; tag de distribuição permanente. Não incorporar arquivos binários novamente no contexto quando disponíveis no bundle. Preservar fonte de terceiros no repositório e avisos de licença. Verificar ambos os HTMLs antes de publicar.
